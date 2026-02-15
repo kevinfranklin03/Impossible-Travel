@@ -430,14 +430,6 @@ ORDER BY hour DESC;
 
 **Conclusion:** Real-time detection prevents **95% more fraud losses** than batch, justifying the additional cost.
 
-### Why Delta Lake over Parquet?
-
-**Delta Lake Advantages:**
-- ✅ **ACID Transactions:** No corrupt data on pipeline failure
-- ✅ **Time Travel:** Audit trail for compliance (`VERSION AS OF`)
-- ✅ **Schema Evolution:** Add columns without breaking pipelines
-- ✅ **OPTIMIZE/ZORDER:** Built-in performance tuning
-- ✅ **MERGE/UPDATE:** Upsert capabilities for corrections
 
 ### Why Stateful Processing?
 
@@ -502,30 +494,6 @@ if impossible_travel(current, previous):
 
 ---
 
-## 🔮 Future Enhancements
-
-### Phase 2: Machine Learning (Q2 2026)
-
-- [ ] **XGBoost Fraud Scoring** - Probabilistic risk scores
-- [ ] **Isolation Forest** - Detect spending anomalies
-- [ ] **Feature Store** - Centralized feature management
-- [ ] **MLflow Integration** - Model versioning and A/B testing
-
-### Phase 3: Advanced Analytics (Q3 2026)
-
-- [ ] **Graph Analysis** - Detect fraud rings (Neo4j)
-- [ ] **Geofencing** - High-risk location rules
-- [ ] **Merchant Category Analysis** - MCC-based risk scoring
-- [ ] **Real-time Alerting** - Slack/PagerDuty integration
-
-### Phase 4: Scale & Reliability (Q4 2026)
-
-- [ ] **Multi-Region Deployment** - Active-active HA
-- [ ] **Auto-Scaling** - Kubernetes-based compute
-- [ ] **Cost Optimization** - Spot instances for dev/test
-- [ ] **Chaos Engineering** - Automated failure testing
-
----
 
 ## 📊 Production Metrics (30-Day Baseline)
 
